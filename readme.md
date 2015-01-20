@@ -10,5 +10,4 @@ Make sure to have git installed
 ## usage
 * make sure to follow the 'first start'-manual
 * type `plog` to check your log
-* type `plog add your message...` to add a message to your personal log
-
+* type `plog add your message...` to add `your message` to your personal log
