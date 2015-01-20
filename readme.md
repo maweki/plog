@@ -4,7 +4,9 @@ Make sure to have git installed
 
 ## first start
 * clone the repository
-* add plog as an alias to your .bashrc `alias plog='~/plog/plog.py'`
+* add plog as an alias to your .bashrc `alias plog='~/plog/plog.py'`.
+You can also cd into the source directory and type the following into
+the console: ``echo "alias plog='`pwd`/plog.py'" >> ~/.bashrc``
 * start using it
 
 ## usage
