@@ -5,12 +5,18 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 datadir = os.path.join(basedir, 'data')
 
 def git_exec(*params):
+    ensure_init()
     wd = os.getcwd()
     os.chdir(datadir)
     import subprocess
     ret = subprocess.call(['git'] + list(params))
     os.chdir(wd)
     return ret
+
+def ensure_init():
+    gitdir = os.path.join(datadir, '.git')
+    if not os.path.exists(gitdir):
+        init()
 
 def init():
     res = git_exec('init', '--quiet')
